@@ -1,0 +1,24 @@
+{
+  "id": "https://sylvaintran.github.com/cart411-project",
+  "schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "threejs scene config",
+  "type": "object",
+  "properties": {
+    "cameras": [
+      {
+        "fov": 75,
+        "aspect": "auto",
+        "near": 0.1,
+        "far": 1000,
+        "position": [0, 0, 0]
+      }
+    ],
+    "renderer": [
+      {
+        "width": "auto",
+        "height": "auto"
+      }
+    ]
+  },
+  "required": ["cameras", "renderer"]
+}
