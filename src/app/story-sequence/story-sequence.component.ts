@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as THREE from 'three';
 import { SceneConfig } from '../scene-config';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 @Component({
   selector: 'app-story-sequence',
@@ -54,6 +55,9 @@ export class StorySequenceComponent implements OnInit {
 
       renderer.render(scene, camera);
     };
+
+    // Controls
+    let orbitControls = new OrbitControls(camera);
 
     animate();
   }
